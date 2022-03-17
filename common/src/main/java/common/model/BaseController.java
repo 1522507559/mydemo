@@ -2,13 +2,9 @@ package common.model;
 
 
 import common.enums.ResultCodeEnum;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.stereotype.Controller;
-
 import javax.servlet.http.HttpServletResponse;
 
-@Controller
 public class BaseController {
 
     private static String SUCCESS = ResultCodeEnum.CODE_0.value();
@@ -39,6 +35,7 @@ public class BaseController {
         return result;
     }
     protected JsonResult renderSuccess(HttpServletResponse response, HttpStatus status) {
+
         JsonResult result = renderSuccess();
         response.setStatus(status.value());
         result.setMsg(status.getReasonPhrase());

@@ -1,10 +1,10 @@
 package common.enums;
 
-import com.baomidou.mybatisplus.core.enums.IEnum;
+//import com.baomidou.mybatisplus.core.enums.IEnum;
 
 import java.io.Serializable;
 
-public enum ResultCodeEnum implements IEnum {
+public enum ResultCodeEnum  {
 
     CODE_0(0,"success"),
     CODE_1001(1001, "fail"),
@@ -26,7 +26,7 @@ public enum ResultCodeEnum implements IEnum {
         return this.msg;
     }
 
-    @Override
+    //@Override
     public Serializable getValue() {
         return null;
     }

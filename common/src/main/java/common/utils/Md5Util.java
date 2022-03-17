@@ -1,6 +1,5 @@
 package common.utils;
 
-import org.apache.shiro.crypto.hash.Md5Hash;
 
 public class Md5Util {
 //    private static final String SALT = "isoft_201905011111";
@@ -11,7 +10,9 @@ public class Md5Util {
      * @return
      */
     public static String md5(String str) {
-        return new Md5Hash(str).toString();
+
+        //return new Md5Hash(str).toString();
+        return null;
     }
 
 }

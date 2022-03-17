@@ -1,3 +1,4 @@
+/*
 package common.utils;
 
 
@@ -18,17 +19,21 @@ public class HelpFundExcelUtil {
 
 
 
-    /**
+    */
+/**
      * 先创建一个实体类
-     */
+     *//*
+
     ReadHelpFundExcel readHelpFundExcel = new ReadHelpFundExcel();
 
-    /**
+    */
+/**
      * 读取Excel文件，获取信息集合
      *
      * @param mFile
      * @return
-     */
+     *//*
+
 
     public Object
     getHelpFundExcelInfo(MultipartFile mFile){
@@ -52,19 +57,23 @@ public class HelpFundExcelUtil {
     }
 
 
-    /**
+    */
+/**
      * 判断是不是2007版本的excel
      * @param filePath
      * @return
-     */
+     *//*
+
     public static boolean isExcel2007(String filePath){
         return filePath.matches("^.+\\.(?i)(xlsx)$");
     }
-    /**
+    */
+/**
      * 判断是不是2003版本的excel
      * @param filePath
      * @return
-     */
+     *//*
+
     public static boolean isExcel2003(String filePath){
         return filePath.matches("^.+\\.(?i)(xls)$");
     }
@@ -98,9 +107,11 @@ public class HelpFundExcelUtil {
 
 
 
-    /**
+    */
+/**
      * 读取excel信息
-     */
+     *//*
+
     public Object readExcelValue(Workbook wb){
         SimpleDateFormat sdf=new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         //先得到第一个sheet1   期初结余量
@@ -312,3 +323,4 @@ public class HelpFundExcelUtil {
         return null;
     }
 }
+*/

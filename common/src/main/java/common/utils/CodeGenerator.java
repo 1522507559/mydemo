@@ -1,3 +1,4 @@
+/*
 package common.utils;
 
 import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException;
@@ -16,11 +17,13 @@ import java.util.Scanner;
 
 public class CodeGenerator {
 
-    /**
+    */
+/**
      * <p>
      * 读取控制台内容
      * </p>
-     */
+     *//*
+
     public static String scanner(String tip) {
         Scanner scanner = new Scanner(System.in);
         StringBuilder help = new StringBuilder();
@@ -87,7 +90,8 @@ public class CodeGenerator {
                         + "/" + tableInfo.getEntityName() + "Mapper" + StringPool.DOT_XML;
             }
         });
-        /*
+        */
+/*
         cfg.setFileCreate(new IFileCreate() {
             @Override
             public boolean isCreate(ConfigBuilder configBuilder, FileType fileType, String filePath) {
@@ -96,7 +100,8 @@ public class CodeGenerator {
                 return false;
             }
         });
-        */
+        *//*
+
         cfg.setFileOutConfigList(focList);
         mpg.setCfg(cfg);
 
@@ -131,3 +136,4 @@ public class CodeGenerator {
         mpg.execute();
     }
 }
+*/
